@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar / Editar Jogo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/controle-de-video-game.png">
+</head>
+<body id="adicao">
+    <header>
+        <img id="consoleLogo" src="images/xbox.png" alt="Logo Xbox 360">
+    </header>
+
+    <main>
+        <section class="form-section">
+        <h1 class="add-title">Adicionar/Editar Jogo</h1>
+
+            <div id="form-container">
+                <form id="gameForm">
+                    <input type="hidden" id="editIndex">
+
+                    <label>Nome do jogo:</label>
+                    <input type="text" id="gameName" required>
+
+                    <label>Categoria:</label>
+                    <select id="gameCategory" required>
+                        <option value="caro">Caro pra caramba, mas um dia</option>
+                        <option value="futuro">Mais pra frente eu compro</option>
+                        <option value="tenho">Já Tenho</option>
+                    </select>
+
+                    <label>Link de compra:</label>
+                    <input type="url" id="gameLink" placeholder="https://">
+
+                    <label>Capa do jogo:</label>
+                    <input type="file" id="gameImage" accept="image/*">
+                    <img id="previewImage" src="" alt="Prévia da capa" style="display:none; width:150px; margin-top:10px; border-radius:10px;">
+
+                    <button type="submit">💾 Salvar Jogo</button>
+                </form>
+            </div>
+
+            <div class="back-link">
+                <a id="backToCollectionLink" href="index.html">⬅️ Voltar para minha coleção</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

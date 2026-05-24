@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Coleção de Jogos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/controle-de-video-game.png">
+</head>
+<body id="index">
+    <header>
+        <button id="toggleConsoleBtn" class="console-switch-btn" type="button">Trocar Console</button>
+        <img id="consoleLogo" src="images/xbox.png" alt="Logo Xbox 360">
+    </header>
+
+    <div class="add-link">
+        <a id="addGameLink" href="adicao.html">➕ Adicionar novo jogo</a>
+    </div>
+
+    <div id="search-container">
+    <input type="text" id="searchBar" placeholder="🔍 Buscar jogo...">
+</div>
+
+    <div id="categories">
+        <div class="category">
+            <h2>💸 Preço Salgado</h2>
+
+        <div class="arrow left">&#10094;</div>
+        <div class="arrow right">&#10095;</div>
+            <div class="games" id="caro"></div>
+        </div>
+
+        <div class="category">
+            <h2>🕒 Compras futuras</h2>
+
+        <div class="arrow left">&#10094;</div>
+        <div class="arrow right">&#10095;</div>
+
+            <div class="games" id="futuro"></div>
+        </div>
+
+        <div class="category">
+            <h2>✅ Tá na conta!</h2>
+
+        <div class="arrow left">&#10094;</div>
+        <div class="arrow right">&#10095;</div>
+
+            <div class="games" id="tenho"></div>
+        </div>
+    </div>
+
+    <div id="coverModal" class="cover-modal" aria-hidden="true">
+        <div class="cover-modal-content">
+            <button id="closeCoverModal" class="cover-modal-close" aria-label="Fechar visualização">&times;</button>
+            <img id="coverModalImage" src="" alt="Capa ampliada do jogo">
+            <h3 id="coverModalTitle"></h3>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.16.0/Sortable.min.js"></script>  
+    <script src="js/script.js"></script>
+</body>
+</html>
